@@ -4,7 +4,7 @@ NGINX FancyIndex Theme Nginx浏览目录美化
 基于 https://github.com/TheInsomniac/Nginx-Fancyindex-Theme 项目修改，新增了基于当前目录递归搜索
 
 #####Usage:
- - Compile nginx with the fancyindex module.
+ - Compile nginx with the fancyindex module.https://github.com/aperezdc/ngx-fancyindex.git
  - Include the contents of 'fancyindex.conf' in your location directive of your nginx conf.
  - 把项目克隆到nginx html目录下
   - header.html
@@ -64,6 +64,8 @@ cd openssl-1.0.2o
  ./config; make; make install
 ldconfig  
 
+
+cd /usr/local/src; git clone https://github.com/aperezdc/ngx-fancyindex.git
 nginx安装：
 ./configure --prefix=/usr/local/nginx --user=nginx --group=nginx --with-http_stub_status_module --with-http_ssl_module --with-pcre=/usr/local/src/pcre-8.42 --with-http_realip_module --with-http_image_filter_module --with-http_gzip_static_module --with-openssl=/usr/local/src/openssl-1.0.2o --with-openssl-opt="enable-tlsext" --with-stream --with-stream_ssl_module --with-http_v2_module --add-module=/usr/local/src/ngx-fancyindex
 
