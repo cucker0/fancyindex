@@ -1,0 +1,14 @@
+<tbody>
+{#<tr>#}
+{#    <td class="link"><a href="../">Parent directory/</a></td>#}
+{#    <td class="size">-</td>#}
+{#    <td class="date">-</td>#}
+{#</tr>#}
+{% for i in data %}
+    <tr>
+        <td class="link"><a href="{{ i.link }}" title="{{ i.title }}">{{ i.display }}</a></td>
+        <td class="size">{{ i.size }}</td>
+        <td class="date">{{ i.date }}</td>
+    </tr>
+{% endfor %}
+</tbody>
