@@ -66,6 +66,7 @@ ldconfig
 
 nginx安装：
 ./configure --prefix=/usr/local/nginx --user=nginx --group=nginx --with-http_stub_status_module --with-http_ssl_module --with-pcre=/usr/local/src/pcre-8.42 --with-http_realip_module --with-http_image_filter_module --with-http_gzip_static_module --with-openssl=/usr/local/src/openssl-1.0.2o --with-openssl-opt="enable-tlsext" --with-stream --with-stream_ssl_module --with-http_v2_module --add-module=/usr/local/src/ngx-fancyindex
+
 make; make install
 
 
