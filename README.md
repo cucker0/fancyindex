@@ -50,8 +50,8 @@ daemonize = /var/log/uwsgi/IndexSearch.log
 下载最新的pcre包
 http://pcre.org/
 #cd /usr/local/src
-tar -zxvf pcre-8.40.tar.gz
-cd pcre-8.40
+tar -zxvf pcre-8.42.tar.gz
+cd pcre-8.42
 ./configure --enable-jit; make; make install
  ldconfig 
 
@@ -59,8 +59,8 @@ cd pcre-8.40
 下载最新的openssl包
 https://www.openssl.org/
 cd /usr/local/src
-tar -zxvf openssl-1.0.2k.tar.gz
-cd openssl-1.0.2k
+tar -zxvf openssl-1.0.2o.tar.gz
+cd openssl-1.0.2o
  ./config; make; make install
 ldconfig  
 
